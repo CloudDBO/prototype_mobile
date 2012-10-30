@@ -1,0 +1,82 @@
+/* Прототип */
+
+body {
+  background: #333;
+}
+
+/* эмуляция экрана устройства */
+div#viewspace {
+  width: 800px; height: 400px; 
+  overflow: hidden; position: absolute;
+}
+
+/* рабочая поверхность; на ней размещаются панели; прокручивается внутри экрана */
+div#workspace {
+  width: 1286px; height: 400px; 
+  position: absolute;
+  left: -240px;
+  background: #eee;
+  background-image: url("../images/background/lgrey069.jpg");
+}
+
+/* скрытая область для размещения ресурсов приложения */
+div#resources {
+  display: none;
+}
+
+/* панель для группировки объектов интерфеса; размещается на workspace */
+div.group {
+  border: 2px solid #ccc; margin: 1px; padding: 0;
+  float: left; overflow: hidden;
+  width: 250px; height: 394px;
+}
+
+div.group > h1 {
+  padding: 5px; position: absolute; width: inherit;
+  font: bold 12pt sans; color: #ccc; text-align: center;
+}
+
+/* список объектов (счетов, задолженностей и т.п.) */
+ul {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+
+/* объект в списке */
+li.object {
+  border: 2px dashed #ccc; margin: 1px; padding: 5px;
+  width: 234px; height: 76px;
+}
+
+li.object img {
+  float:left;
+  width: 60px; height: 60px;
+  border: 0; margin: 2px;
+}
+
+li.object h1, h2, p {
+  margin: 0;
+  text-align: left;
+  font: 9pt sans-serif; color: #888;
+}
+
+li.object h1 {font: bold 12pt sans-serif; color: #555;}
+li.object h2 {font: bold 9pt sans-serif;}
+
+/* область операций (платежей, переводов) */
+div.oper {
+  border: 2px dashed #ccc; margin: 1px; padding: 0px;
+  width: 244px; /*height: 120px;*/
+}
+
+div.oper > h1 {
+  padding: 5px; width: inherit; /* position: absolute;*/
+  font: bold 12pt sans; color: #ccc; text-align: center;
+}
+
+div.popup {
+  width: 600px; height: 356px; left:100px; top:10px;
+  overflow: hidden; position: absolute; z-index: 10;
+  border: 2px solid #ccc; margin: 0px; padding: 10px; border-radius: 10px;
+  background: #fff;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Прототип</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="js/jquery-1.8.2.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.1.custom.min.js" ></script>
+
+    <script type="text/javascript" src="js/main.js" ></script>
+  </head>
+  <body>
+        
+    <div id="viewspace">
+      <div id="workspace">
+      
+        <div class="group">
+          <h1>Панель для примера</h1>
+        </div>
+        
+        <div class="group">
+          <ul id="list-assets">
+            <li class="object">
+              <img src="images/object/coin1.png" />
+              <h1>53 176,35 руб.</h1>
+              <h2>Псевдоним счёта</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+
+            <li class="object">
+              <img src="images/object/coin1.png" />
+              <h1>1 094,81 руб.</h1>
+              <h2>Псевдоним счёта</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+
+            <li class="object">
+              <img src="images/object/coin1.png" />
+              <h1>100 000,00 руб.</h1>
+              <h2>Псевдоним счёта</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+
+            <li class="object">
+              <img src="images/object/coin1.png" />
+              <h1>100 000,00 руб.</h1>
+              <h2>Псевдоним счёта</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+
+            <li class="object">
+              <img src="images/object/coin1.png" />
+              <h1>100 000,00 руб.</h1>
+              <h2>Псевдоним счёта</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="group">
+          <div class="oper" id="oper-zone">
+            <h1>Перетаcкивайте сюда значки счетов, задолженностей, расходов чтобы выполнить операцию</h1>
+            <ul id="list-oper-objects"></ul>
+          </div>
+          
+          <div class="oper" id="detailes-zone">
+            <h1>Перетаcкивайте сюда значки счетов, задолженностей, чтобы просмотреть детализацию или выписку</h1>
+          </div>
+        </div>
+        
+        <div class="group" id="list-liabilities">
+          <ul id="list-liabilities">
+            <li class="object">
+              <img src="images/object/coin2.png" />
+              <h1>&dash;176,35 руб.</h1>
+              <h2>Задолженность</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+
+            <li class="object">
+              <img src="images/object/coin2.png" />
+              <h1>1 000,00 руб.</h1>
+              <h2>Периодический платёж</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+
+            <li class="object">
+              <img src="images/object/coin2.png" />
+              <h1>500,00 руб.</h1>
+              <h2>Шаблон платежа</h2>
+              <p>краткие комментарии владельца счёта</p>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="group">
+          <h1>Панель для примера</h1>
+        </div>
+    
+      </div>
+    </div>
+
+    <div id="resources">
+      <!-- скрытые ресурсы: дилоговые панели, прочие данные для вывода на экран -->
+      
+      <div id="asset-details" class="popup">
+        <h1>Детализация</h1>
+        <button id="hide-asset-details">Закрыть</button>
+      </div>
+      
+      <div id="asset-operation" class="popup">
+        <h1>Операция</h1>
+        <button id="hide-asset-operation">Закрыть</button>
+      </div>
+    </div>
+    
+    <script>
+    </script>
+    
+  </body>
+</html>
